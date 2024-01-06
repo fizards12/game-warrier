@@ -7,16 +7,16 @@ import {
   Navigate,
 } from "react-router-dom";
 import { Suspense, createContext } from "react";
-import lazyLoad from "../utils/lazyload";
+import {lazyLoad} from "../utils/lazyload";
 import Loading from "./Loading";
 import Footer from "./Footer/Footer";
 import tournBg from "../assets/pattern.png";
-const Home = lazyLoad("../Components/Home/Home", null, 1000);
-const Games = lazyLoad("../Components/Games/Games", null, 1000);
-const Blogs = lazyLoad("../Components/Blog/Blogs", null, 1000);
-const Blog = lazyLoad("../Components/Blog/Blog", null, 1000);
-const Contact = lazyLoad("../Components/Contact/Contact", null, 1000);
-const Forums = lazyLoad("../Components/Forums/Forums", null, 1000);
+const Home = lazyLoad("Home/Home");
+const Games = lazyLoad("Games/Games");
+const Blogs = lazyLoad("Blog/Blogs");
+const Blog = lazyLoad("Blog/Blog");
+const Contact = lazyLoad("Contact/Contact");
+const Forums = lazyLoad("Forums/Forums");
 
 export const context = createContext({ mode: "light", setMode: () => {} });
 
