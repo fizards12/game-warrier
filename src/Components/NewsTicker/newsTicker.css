@@ -1,0 +1,14 @@
+.ticker-animation {
+    animation: ticker 1000ms linear 1s infinite normal; 
+}
+
+@keyframes ticker {
+    0%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

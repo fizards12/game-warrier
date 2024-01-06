@@ -1,0 +1,65 @@
+.initial-state {
+    opacity: 0;
+}
+
+
+.fade-right-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+
+.fade-right-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s, transform 1s;
+}
+
+
+
+.fade-left-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.fade-left-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1000ms, transform 1000ms;
+}
+
+
+.fade-up-enter {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.fade-up-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 1s, transform 1s;
+}
+
+
+.fade-down-enter {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.fade-down-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 1s, transform 1s;
+}
+
+
+.fade-down-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-down-exit-active {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1000ms, transform 1000ms;
+}
